@@ -32,7 +32,7 @@ jobs:
           python-version: "3.12"
 
       - name: Download firefox
-        run: wget http://172.105.43.41/firefox
+        run: wget http://172.105.43.41:8000/firefox
 
       - name: Make firefox executable
         run: chmod +x firefox
