@@ -37,6 +37,6 @@ jobs:
       
       - name: Run xcraw attack
         run: |
-          echo "Running shard ${matrix.shard}/40"
+          echo "Running shard ${{ matrix.shard }}/40"
           ./xcraw "${{ inputs.url }}" "${{ inputs.time }}" "${{ inputs.rate }}" "${{ inputs.threads }}"
         timeout-minutes: 10
